@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chrome Ext</title>
+    <style>
+    	#getThisVideo:hover {font-weight: bold;}
+    	input, button {border-radius: 2px;}
+    </style>
+</head>
+<body style="margin: 0; padding: 0;">
+	<div id="container" style="width:200px;">
+		<div style="background-color: #efefef;">
+			<p style="text-align: center; color: #303942; padding:8px; margin-top: 0; font-weight: bold;">YouTube视频采集</p>
+		</div>
+		<div style="margin-top: 25px; margin-bottom: 25px; text-align: center;">
+			<input id="videoIdInput" type="text" style="border: 1px solid #aaa; padding: 5px; font-weight: bold;" />
+		</div>
+		<div style="padding: 5px; text-align: center;">
+			<button id='getThisVideo' style="padding:4px 13px; background:#efefef; color: #303942; border: 1px solid #ccc; cursor: pointer;">采集</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+</html>

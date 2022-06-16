@@ -1,0 +1,27 @@
+{
+	"description": "by Example",
+	"icons": {
+		"128": "youtube.png"
+	},
+	"name": "Get-Youtube-Video",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+	    "default_icon": "youtube.png",
+	    "default_popup": "popup.html",
+	    "default_title": "Click here!"
+	  },
+	"host_permissions": ["http://*/*", "https://*/*"],
+	"permissions": [
+	  "tabs"
+	],
+
+	"content_scripts": [{
+     "js": ["jquery.min.js", "popup.js"],
+     "matches": ["http://*/*", "https://*/*"],
+     "matches": ["<all_urls>"]
+   }]
+}
+
+
+
